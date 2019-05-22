@@ -2,10 +2,11 @@
     display: flex;
     flex-direction: column;
     width: 400px;
-    height: 200px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 1.33em;
     align-items: flex-start;
+    float: left;
+    margin: 0 0 2.33em 0;
 }
 
 .section-title {
@@ -17,7 +18,7 @@
 
 .section-date {
     margin: 0 0 1em 0;
-    color: rgba(0, 0, 0, 0.3);
+    color: rgba(0, 0, 0, 0.4);
 }
 
 .section-keywords {
@@ -28,6 +29,7 @@
     padding: 0.33em;
     background-color: rgba(0, 0, 0, 0.8);
     color: #FFFFFF;
+    margin: 0 0.55em 0 0;
 }
 
 .section-link {
@@ -42,4 +44,15 @@
 .section-link:hover {
     color: rgba(0, 0, 0, 0.9);
     border-bottom: 1px solid rgba(0, 0, 0, 0.9);
+}
+
+.section-stamp {
+    position: absolute;
+    margin-left: 401px;
+    margin: -1.33em 0 0 401px;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
 }

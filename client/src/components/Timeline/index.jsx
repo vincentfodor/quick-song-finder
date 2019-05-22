@@ -24,21 +24,43 @@ class Timeline extends Component {
     render() {
         return (
             <div className="timeline">
-                <Section 
-                    key={1} 
-                    sectionTitle="Make github repository" 
-                    sectionDate="May 26th" 
-                    sectionKeywords={[
-                        {
-                            title: "GitHub",
-                            color: "#24292E"
-                        }
-                    ]}
-                    sectionLink={{
-                        title: "Visit GitHub Account",
-                        href: "https://www.github.com/vincentfodor"
-                    }} 
-                />
+                <div className="sections">
+                    <Section 
+                        key={1} 
+                        sectionTitle="Make github repository" 
+                        sectionDate="May 26th" 
+                        sectionKeywords={[
+                            {
+                                title: "GitHub",
+                                color: "#24292E"
+                            },
+                            {
+                                title: "Facebook",
+                                color: "blue"
+                            }
+                        ]}
+                        sectionLink={{
+                            title: "Visit GitHub Account",
+                            href: "https://www.github.com/vincentfodor"
+                        }} 
+                    />
+                    <Section 
+                        key={2} 
+                        sectionTitle="Make github repository" 
+                        sectionDate="May 26th" 
+                        sectionKeywords={[
+                            {
+                                title: "GitHub",
+                                color: "#24292E"
+                            }
+                        ]}
+                        sectionLink={{
+                            title: "Visit GitHub Account",
+                            href: "https://www.github.com/vincentfodor"
+                        }} 
+                    />
+                </div>
+                <div className="timeline-route"></div>
             </div>
         )
     }

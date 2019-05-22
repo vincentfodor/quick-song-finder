@@ -8,14 +8,21 @@ const Section = ({
     sectionKeywords,
     sectionLink
 }) => {
+    const renderKeywordList = sectionKeywords.map((keyword, index) => <label 
+                                                                key={index}
+                                                                className="section-keyword"
+                                                                style={{ backgroundColor: keyword.color }}
+                                                                >{ keyword.title }</label>)
+
     return (
         <div className="section">
             <h2 className="section-title">{ sectionTitle }</h2>
             <p className="section-date">{ sectionDate }</p>
             <div className="section-keywords">
-                <label className="section-keyword">GitHub</label>
+                { renderKeywordList }
             </div>
             <a href={sectionLink.href} className="section-link">{ sectionLink.title }</a>
+            <span className="section-stamp"></span>
         </div>
     )
 }

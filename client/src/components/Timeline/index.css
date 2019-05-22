@@ -1,0 +1,15 @@
+.timeline {
+    display: flex;
+}
+
+.timeline-route {
+    width: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+    flex-basis: 1px;
+    margin-left: 2.33em;
+}
+
+.sections {
+    display: flex;
+    flex-direction: column;
+}
