@@ -1,0 +1,45 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 200px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1.33em;
+    align-items: flex-start;
+}
+
+.section-title {
+    margin: 0 0 0.33em 0;
+    font-size: 1.33em;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, .9);
+}
+
+.section-date {
+    margin: 0 0 1em 0;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.section-keywords {
+    margin: 0 0 2em 0;
+}
+
+.section-keyword {
+    padding: 0.33em;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #FFFFFF;
+}
+
+.section-link {
+    color: rgba(0, 0, 0, 0.5);
+    padding: 0.33em;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0;
+}
+
+.section-link:hover {
+    color: rgba(0, 0, 0, 0.9);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.9);
+}
