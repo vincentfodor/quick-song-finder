@@ -3,8 +3,7 @@ export default {
   corsOptions: {
     origin: (origin, callback) => {
       const originWhitelist = [
-        'http://localhost:3000',
-        'http://localhost:3001'
+        // ! SET ALLOWED ORIGINS
       ];
       
       if(!origin || originWhitelist.indexOf(origin) !== -1) {

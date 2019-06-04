@@ -1,5 +1,6 @@
 const path = require("path");
 const webpack = require("webpack");
+const config = require('./config');
 
 module.exports = {
   entry: "./src/index.js",
@@ -33,14 +34,14 @@ module.exports = {
     ]
   },
   output: {
-    path: path.resolve(__dirname, "dist/"),
-    publicPath: "/dist/",
+    path: path.resolve(__dirname, "public/"),
+    publicPath: "/public/",
     filename: "bundle.js"
   },
   devServer: {
     contentBase: path.join(__dirname, "public/"),
-    port: 3000,
-    publicPath: "http://localhost:3000/dist/",
+    port: config.port,
+    publicPath: "http://localhost:" + config.port + "/public/",
     hotOnly: true,
     watchContentBase: true
   },
