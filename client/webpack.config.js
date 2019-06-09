@@ -34,14 +34,14 @@ module.exports = {
     ]
   },
   output: {
-    path: path.resolve(__dirname, "public/"),
-    publicPath: "/public/",
+    path: path.resolve(__dirname, "dist/"),
+    publicPath: "/dist/",
     filename: "bundle.js"
   },
   devServer: {
     contentBase: path.join(__dirname, "public/"),
     port: config.port,
-    publicPath: "http://localhost:" + config.port + "/public/",
+    publicPath: "http://localhost:" + config.port + "/dist/",
     hotOnly: true,
     watchContentBase: true
   },
