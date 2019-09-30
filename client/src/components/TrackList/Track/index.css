@@ -1,0 +1,59 @@
+.track-wrapper {
+    overflow: hidden;
+    border-radius: 3px;
+}
+
+.track {
+    display: flex;
+    padding: 1.66em;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    margin: 0 0 1em 0;
+    align-items: flex-start;
+}
+
+.track:hover {
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+.track-popularity {
+    height: 3px;
+    display: block;
+}
+
+.track-popularity--color-green {
+    background-color: rgb(100, 231, 48);
+}
+
+.track-popularity--color-yellow {
+    background-color: rgb(231, 219, 48);
+}
+
+.track-popularity--color-red {
+    background-color: rgb(231, 48, 48);
+}
+
+.track-image {
+    width: 100px;
+}
+
+.track-description {
+    margin: 0 0 0 1em;
+}
+
+.track-description-artists {
+    margin: 0 0 0.66em 0;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.track-description-artist::after {
+    content: ', '
+}
+
+.track-description-artist:last-child::after {
+    content: '';
+}
+
+.track-open-link {
+    text-decoration: none;
+}

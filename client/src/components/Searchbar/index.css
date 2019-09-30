@@ -1,0 +1,29 @@
+.searchbar {
+    margin: 0 0 1em 0;
+}
+
+.searchbar-form {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.searchbar-input {
+    border: none;
+    flex-grow: 1;
+    padding: 0.66em;
+    font-size: 18pt;
+    outline: none;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.searchbar-submit {
+    background-color: transparent;
+    border: none;
+    color: rgb(231, 48, 48);
+    text-transform: uppercase;
+    font-size: 14pt;
+    margin: 0 0 0 0.66em;
+    cursor: pointer;
+    outline: none;
+}
