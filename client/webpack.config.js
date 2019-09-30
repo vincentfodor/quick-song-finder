@@ -43,7 +43,8 @@ module.exports = {
     port: config.port,
     publicPath: "http://localhost:" + config.port + "/dist/",
     hotOnly: true,
-    watchContentBase: true
+    watchContentBase: true,
+    disableHostCheck: true
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin()

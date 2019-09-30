@@ -18,7 +18,7 @@ class App extends Component {
     if(window.location.href.includes("#")) {
       this.setState({ accessToken: window.location.href.split("#")[1].slice(13) });
     } else {
-      if(!this.state.accessToken) window.location = "https://accounts.spotify.com/authorize?client_id=c65c8403c7404c17a3963c299c4c0a79&redirect_uri=http://localhost:3000&response_type=token";
+      if(!this.state.accessToken) window.location = "https://accounts.spotify.com/authorize?client_id=c65c8403c7404c17a3963c299c4c0a79&redirect_uri=http://www.vfodor.de&response_type=token";
     }
   }
 
