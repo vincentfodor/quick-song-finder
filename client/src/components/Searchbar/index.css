@@ -27,3 +27,13 @@
     cursor: pointer;
     outline: none;
 }
+
+@media only screen and (max-width: 850px) {
+    .searchbar-input {
+        font-size: 14pt;
+    }
+
+    .searchbar-submit {
+        font-size: 12pt;
+    }
+}
