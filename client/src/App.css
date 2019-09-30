@@ -15,7 +15,7 @@ html, body {
 .app {
   width: 800px;
   padding: 1em;
-  margin: 0 auto;
+  margin: 4em auto 0 auto;
 }
 
 h1 {
@@ -46,5 +46,6 @@ h2 {
 @media only screen and (max-width: 850px) {
   .app {
     width: 100%;
+    margin: 1em 0 0 0;
   }
 }
