@@ -25,7 +25,6 @@ const Track = ({trackId, trackName, trackImageUrl, trackArtists, trackPopularity
                             {
                                 trackArtists.map(artist => <span className="track-description-artist">{artist.name}</span>)
                             }
-                            {trackId}
                         </p>
                         <audio preload="none" controls src={trackPreviewUrl} />
                     </div>
