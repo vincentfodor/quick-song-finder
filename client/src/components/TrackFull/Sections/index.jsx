@@ -14,7 +14,7 @@ const Sections = ({track, trackUri}) => {
                     className="section"
                     style={{
                       width: `${(section.duration / track.track.duration) * 100}%`,
-                      backgroundColor: `rgba(255, 0, 0, ${(section.loudness * -1) / 10})`
+                      backgroundColor: `rgba(255, 0, 0, ${1 - ((section.loudness * -1) / 10)})`
                     }}
                   >
                         <p className="section-start-time">{ moment(section.start*1000).format('mm:ss') }</p>
