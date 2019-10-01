@@ -29,6 +29,8 @@ class App extends Component {
 
     if(value !== "") {
       this.setState({ tracks: false, search: value, offset: 0 }, () => this.getSongs(value));
+        
+      e.target.query.value = null;
     }
   }
 
@@ -46,8 +48,7 @@ class App extends Component {
   loadMoreSongs = () => {
     this.setState(prevState => ({
       offset: prevState.offset + 10
-    }));
-    this.getSongs(this.state.search);
+    }), () => this.getSongs(this.state.search));
   }
 
   render() {
