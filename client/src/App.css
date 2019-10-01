@@ -13,7 +13,7 @@ html, body {
 }
 
 .app {
-  width: 800px;
+  width: 1000px;
   padding: 1em;
   margin: 4em auto 0 auto;
 }
@@ -44,7 +44,7 @@ h2 {
   border-radius: 3px;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 1050px) {
   .app {
     width: 100%;
     margin: 1em 0 0 0;

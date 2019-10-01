@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
 import Searchbar from './components/Searchbar';
 import axios from 'axios';
 import TrackList from './components/TrackList';
+import TrackFull from './components/TrackFull';
 
 import './App.css';
 
@@ -55,9 +56,10 @@ class App extends Component {
     return (
       <div className="app">
         <BrowserRouter>
+          <h1>Quick Song Finder</h1>
           <Switch>
+            <Route path="/track/:trackid" component={(props) => <TrackFull {...props} accessToken={this.state.accessToken} />} />
             <Route exact path="/">
-              <h1>Quick Song Finder</h1>
               <Searchbar handleSubmitSearch={this.handleSubmitSearch} />
               <button className="app-next-songs-button" onClick={this.loadMoreSongs}>Next 10 songs</button>
               <TrackList tracks={this.state.tracks} />

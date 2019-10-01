@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import "./index.css";
 
@@ -14,7 +15,7 @@ const Track = ({trackId, trackName, trackImageUrl, trackArtists, trackPopularity
     }
 
     return (
-        <a className="track-open-link" href={trackOpenLink}>
+        <Link className="track-open-link" to={`/track/${trackId}`}>
             <div className="track-wrapper">
                 <span className={`track-popularity ${renderTrackPopularityColor()}`} style={{width: `${trackPopularity}%`}}></span>
                 <div className="track">
@@ -30,7 +31,7 @@ const Track = ({trackId, trackName, trackImageUrl, trackArtists, trackPopularity
                     </div>
                 </div>
             </div>
-        </a>
+        </Link>
     )
 }
 
