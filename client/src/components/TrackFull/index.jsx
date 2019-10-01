@@ -15,7 +15,7 @@ const TrackFull = ({match, accessToken}) => {
             headers: {
                 Authorization: `Bearer ${accessToken}`
             }
-        }).then(({data}) => setTrack(data));
+        }).then(({data}) => { setTrack(data); console.log(data) });
         
         axios.get(`https://api.spotify.com/v1/tracks/${trackid}`, {
             headers: {
@@ -36,7 +36,7 @@ const TrackFull = ({match, accessToken}) => {
                             <div className="trackfull-overview-description">
                                 <div className="trackfull-overview-group">
                                     <p className="trackfull-text">Breakdown analysis</p>
-                                    <Sections track={track} />
+                                    <Sections track={track} trackUri={trackInfo.uri} />
                                 </div>
                             </div>
                         </div>    
