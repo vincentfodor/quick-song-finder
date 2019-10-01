@@ -9,7 +9,7 @@ const TrackList = ({tracks}) => {
             {
                 (tracks)
                     ? tracks.map(track => <Track key={track.id} trackId={track.id} trackName={track.name} trackImageUrl={track.album.images[0].url} trackArtists={track.artists} trackPopularity={track.popularity} trackExplicit={track.explicit} trackOpenLink={track.uri} trackPreviewUrl={track.preview_url} />)
-                    : <p>Loading...</p>
+                    : null
             }
         </div>
     )
